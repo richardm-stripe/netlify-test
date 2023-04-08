@@ -1,6 +1,7 @@
 export const handler = async (event, context) => {
-  console.log('foo')
+  console.log(require('stripe'))
   return {
-    bar: 'baz'
-  }
+    statusCode: 200,
+    body: JSON.stringify({ message: "Hello World" }),
+  };
 }
